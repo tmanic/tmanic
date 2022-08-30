@@ -1,0 +1,161 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   background-color: black;
+   color: white;
+}
+.container{
+   min-height: 100vh;
+   max-width: 100%;
+   background-color: none;
+   position: relative;
+    animation: transitionIn 0.7s;
+}
+.nav-bar{
+            position: relative;
+            width: 85%;
+            height: 15%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: medium;
+            left: 90%;
+        }
+        .nav-bar > h1{
+            margin-top: 10px;
+            left: -50%;
+            color: red;
+            position: absolute;
+            color: black;
+        }
+.ul-bar{
+    list-style: none;
+    position: relative;
+    display: flex;
+    right: -10%;
+    
+}
+.ul-bar li{
+    display: inline-block;
+    margin-left: 60px;
+    
+}
+.ul-bar li:hover{
+    transform: translateY(5%);
+}
+a:link{
+    text-decoration: none;
+    color: aqua;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+text-decoration: none;
+color: darkblue;
+
+}
+a:active{
+    text-decoration: none;
+    color: coral;
+}
+.sect{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+.ass{
+    position: absolute;
+    
+    align-items: center;
+    justify-content: center;
+    left: -500px;
+    height: 500px;
+    width: 700px;
+    text-align: center;
+    line-height: 2em;
+    font-size: larger;
+    display: inline-block;
+}
+.sas{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    left: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sas > img{
+    height: 450px;
+    width: 450px;
+    
+}
+.wrapper{
+    position:absolute;
+    top: 100vh;
+    min-width: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    left: -400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    text-align: center;
+}
+.wrapper > aside{
+    position: relative;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 200px;
+}
+.end{
+    position: absolute;
+    top: 200vh;
+    margin-top: 5px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#preloader{
+    background: black url(7fPN.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    background-size: 15%;
+    z-index: 100;
+    position: fixed;
+}
+@keyframes transitionIn{
+    from{
+opacity: 0;
+transform: translateY(-10px);
+    }
+    to{
+opacity: 1;
+transform: translateY(0);
+    }
+}
+
+
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#30ff00);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, #00c6ff);
+}

@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+}        
+body{
+    background-color: bisque;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    top: 10px;
+    width: 100%;
+     
+}
+.container h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-color: burlywood;  
+}
+.grid{
+    position: relative;
+    display: grid;
+    padding: 16px;
+    background-color: bisque;
+    grid-gap: .5em;
+    grid-template-areas: 
+        "photoOne photoTwo photoThree"
+        "photoOne photoFour photoFive";
+        grid-template-columns: 1fr 20% 20%
+    ;
+    transition: 0.05s;
+}
+.grid > div{
+    border: 2px solid #222;
+    border-radius: 5px;
+    object-fit: cover;
+    align-items:center ;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;  
+}
+.grid > div:first-child{
+    grid-area: photoOne;
+    height: 500px;
+    background-image: url(books12.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.grid > div:nth-child(3):hover{
+    transform: translateY(-5%);
+}
+.grid > div:nth-child(2){
+    background-image: url(Rplot01.png);
+    background-size: cover;
+    background-position: center;
+}
+.grid > div:nth-child(2):hover{
+    transform: translateY(-5%);
+}
+.grid > div:nth-child(3){
+    background-image: url(wordcloud.png);
+    background-size: cover;
+    background-position: center;
+}
+.grid > div:nth-child(4){
+    background-image: url(laptopondesk12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid > div:last-child{
+    background-image: url(notebook12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid > div > h3{
+    text-align: center;
+    color: red;
+    font-size: larger;
+}
+.grid > div > h5{
+    text-align: center;
+    color: blue;
+    font-size: larger;
+}
+.grid > div > p{
+    text-align: center;
+    text-justify: newspaper;
+}
+.grid >div:hover{
+    transform: translateY(5%);
+}
+#pic{
+    position: relative;
+    top: -180px;
+    padding: 10px;
+    margin-top: 20px;
+}
+#picOne{
+    position: relative;
+    top: -50px;
+    padding: 10px;
+    margin-top: 20px;
+}
+#picTwo{
+    position: relative;
+    top: -70px;
+    padding: 10px;
+    margin-top: 20px;
+}
+#picThree{
+    position: relative;
+    top: -50px;
+    padding: 10px;
+    margin-top: 20px;
+}
+#lastPic{
+    position: relative;
+    top: -90px;
+    padding: 10px;
+    margin-top: 20px;
+}
+a{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: medium;
+    font-family: cursive;
+    border: 2px solid #222;
+    border-radius: 5%;
+    transition: 0.05s;
+    overflow: hidden;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    background-color: bisque;
+    border-radius: 10%;
+}
+a:active{
+    text-decoration: none;
+}
+#preloader{
+    background: black url(1fpC.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    background-size: 15%;
+    z-index: 100;
+    position: fixed;
+}
