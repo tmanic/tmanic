@@ -31,9 +31,8 @@ body{
         .nav-bar > h1{
             margin-top: 10px;
             left: -50%;
-            color: red;
             position: absolute;
-            color: black;
+            
         }
 .ul-bar{
     list-style: none;

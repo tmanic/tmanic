@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: black;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    top: 0px;
+    background-color: black;
+    animation: transitionIn 0.7s;
+}
+.nav-bar{
+    position: absolute;
+    display: flex;
+    right: 35px;
+    top: 20px;
+    padding: 10px;
+}
+.ul-bar{
+    list-style: none;
+    position: relative;
+    display: flex;
+}
+.ul-bar li{
+    display: inline-block;
+    margin-left: 100px;
+}
+a:link{
+    text-decoration: none;
+    color: aqua;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+text-decoration: none;
+    color: darkblue;
+}
+a:active{
+    text-decoration: none;
+    color: coral;
+}
+.input_Wrapper{
+height:600px ;
+width: 50%;
+position: absolute;
+padding-top: 10px;
+background-color: rgb(18, 18, 18);
+border: 1px dashed rgb(18, 10, 10);
+text-align: center;
+left: 25%;
+top: 10%;
+color: white;
+font-size: large;
+}
+.form{
+height: 85%;
+width: 75%;
+position: relative;
+background-color: rgb(98, 98, 98);
+left: 15%;
+align-items: center;
+justify-content: center;
+display: flex;
+padding-top: 10px;
+box-shadow:  inset -0.5vmin -0.25vmin 10px rgb(18, 24, 18);
+}
+/*.label{
+position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 35px;
+    top: 20px;
+    padding: 10px;
+}*/
+.form > label:first-child{
+top: 50px;
+position: absolute;
+margin-top: 50px;
+padding-top: 20px;
+}
+.form > label:nth-child(2){
+top: 100px;
+position: absolute;
+margin-top: 50px;
+padding-top: 20px;
+}
+
+input{
+height: 30px;
+width: 400px;
+ border-radius: 5%;  
+  overflow: hidden;
+}
+#submit{
+width: 200px;
+transition: 0.05s;
+box-shadow:  0.25vmin 0.25vmin black,
+            inset -0.25vmin -0.25vmin black;
+
+}
+#submit:hover{
+    border-radius: 15px;
+    box-shadow: 0 0.25vmin 15px 0px rgb(93, 92, 92);
+}
+#preloader{
+background: black url(7fPN.gif) no-repeat center center;
+height: 100vh;
+width: 100%;
+background-size: 15%;
+z-index: 100;
+position: fixed;
+}
+@keyframes transitionIn{
+from{
+opacity: 0;
+transform: translateY(-10px);
+}
+to{
+opacity: 1;
+transform: translateY(0);
+}
+}

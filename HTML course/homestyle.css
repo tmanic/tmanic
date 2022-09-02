@@ -5,32 +5,33 @@
     font-size: large;
 }        
 body{
-    background-color: bisque;
+    background-color: none;
+    color: black;
 }
 .container{
     position: relative;
-    min-height: 100vh;
+    max-height: 100vh;
     top: 10px;
     width: 100%;
      
 }
 .container h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: serif;
     text-align: center;
-    background-color: burlywood;  
+    background-color: rgb(35, 34, 34);  
 }
 .grid{
     position: relative;
     display: grid;
     padding: 16px;
-    background-color: bisque;
+    background-color: black;
     grid-gap: .5em;
     grid-template-areas: 
         "photoOne photoTwo photoThree"
         "photoOne photoFour photoFive";
         grid-template-columns: 1fr 20% 20%
     ;
-    transition: 0.05s;
+    transition: 1s;
 }
 .grid > div{
     border: 2px solid #222;
@@ -53,22 +54,26 @@ body{
     transform: translateY(-5%);
 }
 .grid > div:nth-child(2){
-    background-image: url(Rplot01.png);
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(60, 58, 58, 0.95);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
 .grid > div:nth-child(2):hover{
     transform: translateY(-5%);
 }
 .grid > div:nth-child(3){
-    background-image: url(wordcloud.png);
-    background-size: cover;
-    background-position: center;
+background-color: rgba(60, 58, 58, 0.95);
+align-items: center;
+justify-content: center;
+display: flex;
 }
 .grid > div:nth-child(4){
-    background-image: url(laptopondesk12.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(60, 58, 58, 0.95);
+align-items: center;
+justify-content: center;
+display: flex;
 }
 .grid > div:last-child{
     background-image: url(notebook12.jpg);
@@ -100,7 +105,7 @@ body{
 }
 #picOne{
     position: relative;
-    top: -50px;
+    top: -70px;
     padding: 10px;
     margin-top: 20px;
 }
@@ -112,7 +117,7 @@ body{
 }
 #picThree{
     position: relative;
-    top: -50px;
+    top: -70px;
     padding: 10px;
     margin-top: 20px;
 }
@@ -131,11 +136,14 @@ a{
     background-color: white;
     text-decoration: none;
     font-size: medium;
-    font-family: cursive;
-    border: 2px solid #222;
+    font-family: serif;
+    /*border: 2px solid #222;*/
     border-radius: 5%;
     transition: 0.05s;
     overflow: hidden;
+    left: 30%;
+    box-shadow:  0.25vmin 0.25vmin black,
+                inset -0.25vmin -0.25vmin black;
 }
 a:link{
     text-decoration: none;
@@ -145,8 +153,9 @@ a:visited{
 }
 a:hover{
     text-decoration: none;
-    background-color: bisque;
+    background-color: white;
     border-radius: 10%;
+    box-shadow: 0 0.25vmin 15px 0px rgb(93, 92, 92);
 }
 a:active{
     text-decoration: none;
@@ -158,4 +167,22 @@ a:active{
     background-size: 15%;
     z-index: 100;
     position: fixed;
+}
+img{
+    height: 170px;
+    width: 170px;
+    transition: 1s;
+}
+img:hover{
+    transform: translateX(-5%);
+}
+.imgwrd{
+    position: relative;
+    padding-top: 10px;
+    margin-top: 20px;
+    top: 50px;
+    margin: 10%;
+}
+.linkpg{
+    top:40px;
 }
