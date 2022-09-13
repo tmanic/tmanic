@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="teacher.css">
+    <title>Last</title>
+    <style>
+     .card{
+        position: absolute;
+        top: 15%;
+        left: 40%;
+        height: 400px;
+        width: 350px;
+        color: black;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+     }
+     .one{
+        margin-left: -550px;
+        background-color: white;
+
+     }
+     .two{
+        margin-left: 300px;
+        background-color: aliceblue;
+     }
+     .hnd{
+        position: absolute;
+        height: 20px;
+        width: 70px;
+        left: -250px;
+        top: 150px;
+        background-color: #fca;
+        border-radius: 10% 25% 25% 10% ;
+     }
+
+     .ulna{
+        height: 50px;
+        width: 150px;
+        position: absolute;
+        left: -190px;
+        top: 150px;
+        background-color: white;
+        border-radius: 0 10px 10px 0;
+        border: 2px solid #222;
+     }
+     .ulna::before{
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 160px;
+        left: 145px;
+        top: -45px;
+        z-index: -10;
+        transform: rotate(-30deg);
+        background-color: white;
+        border-radius: 0 10px 10px 0;
+     }
+     .ulna::after{
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        left: 135px;
+        top: 7px;
+        border: 2px solid #222;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 50%;
+        z-index: 10;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <ul class="ul-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Case Studies</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <h1>Personality Test</h1>
+        </nav>
+        <div class="card one">
+            <h2>Introversion</h2>
+        </div>
+        <div class="card two">
+            <h2>Extroversion</h2>
+        </div>
+        <div class="head">
+            <div class="eyes left">
+                <div class="ball"></div>
+            </div>
+            <div class="eyes right">
+                <div class="ball"></div>
+            </div>
+            <div class="ear onoy"></div>
+            <div class="ear twoy"></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+            <div class="neck"></div>
+            <div class="collar three"></div>
+            <div class="collar four"></div>
+            <div class="oval"></div>
+            <div class="hair"></div>
+            <div class="hand o">
+                <div class="hnd"></div>
+                <div class="ulna"></div>
+            </div>
+            <div class="hand t">
+                <div class="hnd"></div>
+                <div class="ulna"></div>
+            </div>
+            <div class="circle first"></div>
+            <div class="circle second"></div>
+        <svg>
+            <filter id="wavy">
+                <feTurbulence x="0" baseFrequency="0.009" numOctaves="5" seed="2">
+                    <animate attributeName="baseFrequency" dur="60s" values="0.02;0.005;0.02" 
+                    repeatCount="indefinite"></animate>
+                </feTurbulence>
+                <feDisplacementMap in="SourceGraphic" scale="30" ></feDisplacementMap>
+            </filter>
+        </svg>
+        </div>
+    </div>
+    <script src="mouse.js"></script>
+</body>
+</html>

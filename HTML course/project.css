@@ -17,6 +17,9 @@ body{
    position: relative;
     animation: transitionIn 0.7s;
 }
+html{
+    scroll-behavior: smooth;
+}
 .nav-bar{
             position: relative;
             width: 85%;
