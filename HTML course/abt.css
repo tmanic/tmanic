@@ -7,8 +7,9 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    
  }
  .container{
     min-height: 100vh;
@@ -49,7 +50,7 @@
  }
  a:visited{
      text-decoration: none;
-     color: white;
+     color: black;
  }
  a:hover{
  text-decoration: none;
@@ -62,25 +63,30 @@
  }
  .content{
      position: absolute;
-     top: 50%;
-     left: 50%;
+     top: 80%;
+     left: 30%;
      transform: translate(-50%, -50%);
      z-index: 6;
- }
- .content > b{
-     font-weight: bolder;
+     text-align: center;
+     transform: scaleX(1.8) scaleY(1.5);
+     line-height: 30px;
      
  }
+ .content > p{
+    font-size: xx-large;
+ }
+ 
  .avatar{
      position: absolute;
      height: 110px;
      width: 500px;
-     top: 50%;
-     left: 105%;
+     top: 37%;
+     left: 100%;
      transform: translate(-50%, -50%);
      background-color: hsl(199, 98%, 48%);
      mix-blend-mode: luminosity;
      z-index: 5;
+     scale: 2;
      
  }
  .head{
@@ -92,7 +98,7 @@
      left: 200px;
      border-radius: 10% 10% 100% 100% / 10% 10% 50% 50%;
      box-shadow: inset 0 -1vmin 1px 2px #5002,
-                 0 0.75vmin 0px 1px #5002;
+                 0vmin 0.25vmin 0px 0px #5002;
     
  }
  .neck{
@@ -137,7 +143,7 @@
      height: 50px;
      width: 100px;
      border-radius: 50%;
-     background-color: black;
+     background-color: white;
      top: 25px;
      left: 0px;
  }
@@ -166,6 +172,16 @@
          border-radius: 50%;
          transform: rotate(-30deg);
      }
+     .ear::after{
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        border-radius: 100%;
+        background-color: #5002;
+        top: 17px;
+        left: 3px;
+     }
      .onoy{
      left: -15px;
      }
@@ -177,7 +193,7 @@
          position: absolute;
          height: 40px;
          width: 40px;
-         left: 0;
+         left: -1px;
          top: 40px;
          background-color: transparent;
          border-radius: 0 0 50% 50%;
@@ -296,6 +312,7 @@
             background-color: rgb(22, 18, 18);;
             left: -1px;
             border-radius: 10%;
+            top: -1px;
             
         }     
         .hair::before{
@@ -305,5 +322,5 @@
             width: 5px;
             background-color: rgb(22, 18, 18);
             top: 17px;
-            box-shadow: 13.5vmin 0vmin 0 0vmin rgb(22, 18, 18);;
+            box-shadow: 14.2vmin 0vmin 0 0vmin rgb(22, 18, 18);;
         }

@@ -133,14 +133,13 @@ a{
     width: 50px;
     text-align: center;
     color: black;
-    background-color: white;
+    background-color: darkgray;
     text-decoration: none;
     font-size: medium;
     font-family: serif;
     /*border: 2px solid #222;*/
-    border-radius: 5%;
     transition: 0.05s;
-    overflow: hidden;
+    padding: 5px;
     left: 30%;
     box-shadow:  0.25vmin 0.25vmin black,
                 inset -0.25vmin -0.25vmin black;
@@ -152,9 +151,7 @@ a:visited{
     text-decoration: none;
 }
 a:hover{
-    text-decoration: none;
-    background-color: white;
-    border-radius: 10%;
+    border-radius: 15px;
     box-shadow: 0 0.25vmin 15px 0px rgb(93, 92, 92);
 }
 a:active{

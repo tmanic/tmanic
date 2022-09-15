@@ -25,7 +25,7 @@ body{
     position: absolute;
     display: flex;
     right: 35px;
-    top: 20px;
+    top: 10px;
     padding: 10px;
 }
 .ul-bar{
@@ -62,7 +62,7 @@ background-color: rgb(18, 18, 18);
 border: 1px dashed rgb(18, 10, 10);
 text-align: center;
 left: 25%;
-top: 10%;
+top: 8%;
 color: white;
 font-size: large;
 }

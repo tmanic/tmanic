@@ -7,17 +7,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="abt.css">
     <style>
-    strong{
-        color: black;
-    
-    }
     #bb{
         height: 20px;
         width: 20px;
         background-color: violet;
     }
+    .glitch{
+        letter-spacing: 8px;
+        cursor: pointer;
+    }
+    .glitch::before, .glitch::after{
+        content: "Hi";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .glitch:hover::before{
+        animation: glitch 0.3s linear 6;
+        color: #e91e63;
+        z-index: -2;
+    }
+    .glitch:hover::after{
+        animation: glitch 0.3s linear 6 reverse;
+        color: #2196f3;
+        z-index: -1;
+    }
+
+    @keyframes glitch{
+        0%{
+            top: 0;
+            left: 0;
+        }
+        20%{
+            top: -5px;
+            left: -5px;
+        }
+        40%{
+            top: 5px;
+            left: 5px;
+        }
+        60%{
+            top: -5px;
+            left: 5px;
+        }
+        80%{
+            top: 5px;
+            left: -5px;
+        }
+        100%{
+            top: 0;
+            left: 0;
+        }
+    }
     </style>
-</head>
+</headevin
 <body>
     <div id="preloader"></div>
     <div class="container">
@@ -29,10 +73,6 @@
                 <li><a href="About.html">About</a></li>
             </ul>
         </nav>
-        <div class="content">
-            <h1>Hi, my <br> name is <strong>Tevin</strong></h1>
-            <small>Lorem ipsum dolor s<strong>it amet, consectetur</strong> adipisicing elit. Ipsa,<strong>numquam?</strong> </small>
-        </div>
         <div class="avatar">
             <div class="head">
                 <div class="eyebrow eyr1"></div>
@@ -54,7 +94,10 @@
             <div class="neck"></div>
             <div class="shirt"></div>
         </div>
-        <button id="bb"></button>
+        <div class="content">
+            <p><span  class="glitch">Hi</span>, my name is <br><b>Tevin</b></p>
+            
+        </div>
     </div>
     <script src="abtrolleyes.js"></script>
 <script src="preloader.js"></script>

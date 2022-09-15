@@ -37,9 +37,9 @@ function hsh(e){
             }
 }
 
-window.addEventListener('mousemove', ()=>{  
-    console.log('hjj')
-    hsh()
+//window.addEventListener('mousemove', ()=>{  
+    //console.log('hjj')
+    //hsh()
   //  state = true;
   
     //var x = event.clientX * 100/ window.innerWidth + "%";
@@ -56,5 +56,5 @@ window.addEventListener('mousemove', ()=>{
         
 //}
 
-})
+//})
 

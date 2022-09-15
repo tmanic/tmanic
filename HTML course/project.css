@@ -76,13 +76,13 @@ a:active{
 
 }
 .ass{
-    position: absolute;
-    
+    position: absolute;  
     align-items: center;
     justify-content: center;
-    left: -500px;
+    left: -400px;
     height: 500px;
     width: 700px;
+    top: 50px;
     text-align: center;
     line-height: 2em;
     font-size: larger;
@@ -96,6 +96,7 @@ a:active{
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 50px;
 }
 .sas > img{
     height: 450px;
