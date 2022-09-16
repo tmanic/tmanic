@@ -255,3 +255,36 @@ a:active{
    z-index: 100;
    position: fixed;
 }
+@media all and (max-width:500px){
+   .container{
+      height: 100vh;
+      width: 120%;
+      position: absolute;
+      top: 2%;
+   }
+   .nav-bar{
+      position: relative;
+      width: 35%;
+      height: 15%;
+      left: 12%;
+      top: 5px;
+      background-color: transparent;
+   }
+   .ul-bar{
+      list-style: none;
+      position: relative;
+      display: flex;
+      right: 10%;  
+      top: -10px;
+   }
+   .ul-bar li{
+      display: inline-block;
+      margin-left: 25px;
+   }
+   .slot-machine{
+      scale: 0.7;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+   }
+}
