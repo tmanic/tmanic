@@ -183,3 +183,37 @@ img:hover{
 .linkpg{
     top:40px;
 }
+@media all and (max-width:500px){
+    .grid{
+        position: relative;
+        display: grid;
+        padding: 16px;
+        left: -5px;
+        background-color: black;
+        grid-gap: .3em;
+        grid-template-areas: 
+            "photoOne photoTwo"
+            "photoThree photoFour photoFive"
+            ;
+            grid-template-columns: 1fr 30% 30%
+        ;
+    }    
+    img{
+        height: 120px;
+        width: 120px;
+        transform: translate(-50%, 10%);
+        left: 40%;
+        
+        position: absolute;
+    }
+    .linkpg{
+        transform: translate(-50%,120%);
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 110%;
+        left:50% ;
+        
+    }
+    }
+    

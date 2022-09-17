@@ -283,7 +283,7 @@ a:active{
    }
    .slot-machine{
       scale: 0.7;
-      left: 50%;
+      left: 40%;
       top: 50%;
       transform: translate(-50%,-50%);
    }
