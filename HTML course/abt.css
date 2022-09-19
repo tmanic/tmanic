@@ -12,7 +12,7 @@
     
  }
  .container{
-    min-height: 100vh;
+    height: 100vh;
     max-width: 100%;
     background-color: none;
     position: relative;
@@ -27,13 +27,13 @@
              align-items: center;
              justify-content: space-between;
              font-size: medium;
-             left: 90%;
+             left: 70%;
          }
  .ul-bar{
      list-style: none;
      position: relative;
      display: flex;
-     right: -10%;
+     right: 0%;
      
  }
  .ul-bar li{
@@ -84,7 +84,7 @@
      left: 100%;
      transform: translate(-50%, -50%);
      background-color: hsl(199, 98%, 48%);
-     mix-blend-mode: luminosity;
+     /*mix-blend-mode: luminosity;*/
      z-index: 5;
      scale: 2;
      
@@ -309,7 +309,7 @@
             position: absolute;
             height: 20px;
             width: 100px;
-            background-color: rgb(22, 18, 18);;
+            background-color: rgb(22, 18, 18);
             left: -1px;
             border-radius: 10%;
             top: -1px;
@@ -322,5 +322,136 @@
             width: 5px;
             background-color: rgb(22, 18, 18);
             top: 17px;
-            box-shadow: 14.2vmin 0vmin 0 0vmin rgb(22, 18, 18);;
+        }
+        .hair::after{
+            content: "";
+            position: absolute;
+            height: 10px;
+            width: 5px;
+            background-color: rgb(22, 18, 18);
+            top: 17px;
+            left: 6.9vw;
+        }
+        #bb{
+            height: 20px;
+            width: 20px;
+            background-color: violet;
+        }
+        .glitch{
+            letter-spacing: 8px;
+            cursor: pointer;
+        }
+        .glitch::before, .glitch::after{
+            content: "Hi";
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .glitch:hover::before{
+            animation: glitch 0.3s linear 6;
+            color: #e91e63;
+            z-index: -2;
+        }
+        .glitch:hover::after{
+            animation: glitch 0.3s linear 6 reverse;
+            color: #2196f3;
+            z-index: -1;
+        }
+    
+        @keyframes glitch{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            20%{
+                top: -5px;
+                left: -5px;
+            }
+            40%{
+                top: 5px;
+                left: 5px;
+            }
+            60%{
+                top: -5px;
+                left: 5px;
+            }
+            80%{
+                top: 5px;
+                left: -5px;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+
+        @media all and (max-width:500px){
+            .nav-bar{
+                position: relative;
+                width: 85%;
+                height: 15%;
+                left: 30%;
+            }
+    .ul-bar{
+        
+        right: 5%;
+        
+    }
+    .ul-bar li{
+        
+        margin-left: 20px;
+        
+    }
+    .avatar{
+        top: 35%;
+        left: 100px;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        scale: 1;
+        
+    }
+.hair::after{
+    left: 19vw;
+}
+    .content{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .glitch{
+        letter-spacing: 10px;
+    }
+    .content > p{
+        font-size: larger;
+     }
+    
+        }
+        @media all and (max-width:400px){
+            .nav-bar{
+                position: relative;
+                width: 85%;
+                height: 15%;
+                left: 70%;
+                font-size: medium;
+            }
+    
+    .avatar{
+        top: 35%;
+        left: 500px;
+        transform: translate(-50%, -50%);
+       
+        scale: 1.5;
+        
+    }
+    
+    .content{
+        top: 70%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        transform: scaleX(1.8) scaleY(1.5);
+        line-height: 30px;
+        
+    }
+    
         }

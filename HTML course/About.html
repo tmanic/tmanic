@@ -7,59 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="abt.css">
     <style>
-    #bb{
-        height: 20px;
-        width: 20px;
-        background-color: violet;
-    }
-    .glitch{
-        letter-spacing: 8px;
-        cursor: pointer;
-    }
-    .glitch::before, .glitch::after{
-        content: "Hi";
-        display: block;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-    .glitch:hover::before{
-        animation: glitch 0.3s linear 6;
-        color: #e91e63;
-        z-index: -2;
-    }
-    .glitch:hover::after{
-        animation: glitch 0.3s linear 6 reverse;
-        color: #2196f3;
-        z-index: -1;
-    }
-
-    @keyframes glitch{
-        0%{
-            top: 0;
-            left: 0;
-        }
-        20%{
-            top: -5px;
-            left: -5px;
-        }
-        40%{
-            top: 5px;
-            left: 5px;
-        }
-        60%{
-            top: -5px;
-            left: 5px;
-        }
-        80%{
-            top: 5px;
-            left: -5px;
-        }
-        100%{
-            top: 0;
-            left: 0;
-        }
-    }
+    
     </style>
 </headevin
 <body>
@@ -71,6 +19,7 @@
                 <li><a href="home.html">Case Studies</a></li>
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="About.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
         <div class="avatar">

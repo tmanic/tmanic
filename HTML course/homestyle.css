@@ -45,9 +45,9 @@ body{
 .grid > div:first-child{
     grid-area: photoOne;
     height: 500px;
-    background-image: url(books12.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(60, 58, 58, 0.95);
+align-items: center;
+justify-content: center;
     
 }
 .grid > div:nth-child(3):hover{
@@ -76,9 +76,10 @@ justify-content: center;
 display: flex;
 }
 .grid > div:last-child{
-    background-image: url(notebook12.jpg);
-    background-size: cover;
-    background-position: center;
+background-color: rgba(60, 58, 58, 0.95);
+align-items: center;
+justify-content: center;
+display: flex;
 }
 .grid > div > h3{
     text-align: center;
@@ -99,9 +100,13 @@ display: flex;
 }
 #pic{
     position: relative;
-    top: -180px;
+    top: -10px;
     padding: 10px;
     margin-top: 20px;
+}
+.pica{
+    height:170px;
+    width: 170px;
 }
 #picOne{
     position: relative;
@@ -183,12 +188,74 @@ img:hover{
 .linkpg{
     top:40px;
 }
+.pica{
+    height:350px;
+    width: 350px;
+    
+}
+#linkone{
+    transform: translate(-50%,50%);
+    left: 50%;
+    top: 370px;
+    position: absolute;
+    width: 70px;
+    height: 30px;
+}
+@media all and (max-width:900px){
+    .grid{
+        position: relative;
+        display: grid;
+        padding: 16px;
+        left: -6px;
+        background-color: black;
+        grid-gap: .3em;
+        grid-template-areas: 
+            "photoOne photoTwo"
+            "photoThree photoFour photoFive"
+            ;
+            grid-template-columns: 1fr 30% 30%
+        ;
+    }    
+    img{
+        height: 160px;
+        width: 160px;
+        transform: translate(-50%, 0%);
+        left: 40%;
+        
+        position: absolute;
+    }
+    .linkpg{
+        transform: translate(-50%,50%);
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 230px;
+        left:50% ;
+        
+    }
+    .pica{
+        height:250px;
+        width: 250px;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+    }
+    #linkone{
+        transform: translate(-50%,50%);
+        left: 20%;
+        top: 150px;
+        position: absolute;
+        width: 70px;
+        height: 30px;
+    }
+    }
+
 @media all and (max-width:500px){
     .grid{
         position: relative;
         display: grid;
         padding: 16px;
-        left: -5px;
+        left: -6px;
         background-color: black;
         grid-gap: .3em;
         grid-template-areas: 
@@ -215,5 +282,138 @@ img:hover{
         left:50% ;
         
     }
+    .pica{
+        height:170px;
+        width: 140px;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
     }
-    
+    #linkone{
+        transform: translate(-50%,250%);
+        left: 20%;
+        top: 250%;
+        position: absolute;
+        width: 70px;
+        height: 30px;
+    }
+    }
+    @media all and (max-width:400px){
+        .container{
+            width: 110%;
+        }
+        .grid{
+            position: relative;
+            display: grid;
+            padding: 16px;
+            left: -10px;
+            background-color: black;
+            grid-gap: .3em;
+            grid-template-areas: 
+                "photoOne photoTwo"
+                "photoThree photoFour photoFive"
+                ;
+                grid-template-columns: 1fr 30% 30%
+            ;
+        }    
+        img{
+            height: 120px;
+            width: 100px;
+            transform: translate(-50%,-20%);
+            left: 40%;
+            
+            position: absolute;
+        }
+        .linkpg{
+            transform: translate(-50%,120%);
+            position: absolute;
+            width: 60px;
+            height: 35px;
+            top: 85%;
+            left:50% ;
+            font-size: small;
+            
+        }   
+        .pica{
+            height:180px;
+            width: 130px;
+            
+        }
+    } 
+    @media all and (max-width:300px){
+        .container{
+            width: 110%;
+        }
+        .grid{
+            position: relative;
+            display: grid;
+            padding: 16px;
+            left: -10px;
+            background-color: black;
+            grid-gap: .3em;
+            grid-template-areas: 
+                "photoOne photoTwo"
+                "photoThree photoFour photoFive"
+                ;
+                grid-template-columns: 1fr 30% 30%
+            ;
+        }    
+        img{
+            height: 100px;
+            width: 70px;
+            transform: translate(-50%,-20%);
+            left: 40%;
+            
+            position: absolute;
+        }
+        .linkpg{
+            transform: translate(-50%,120%);
+            position: absolute;
+            width: 60px;
+            height: 35px;
+            top: 85%;
+            left:50% ;
+            font-size: small;
+            
+        }   
+        .pica{
+            height:150px;
+            width: 80px;
+            
+        }
+    }
+   
+    /*@media all and (min-width:300px){
+        .grid{
+            position: relative;
+            display: grid;
+            padding: 16px;
+            left: -5px;
+            background-color: black;
+            grid-gap: .3em;
+            grid-template-areas: 
+                "photoOne photoTwo"
+                "photoThree photoFour photoFive"
+                ;
+                grid-template-columns: 1fr 30% 30%
+            ;
+        }    
+        img{
+            height: 100px;
+            width: 70px;
+            transform: translate(-50%,-20%);
+            left: 40%;
+            
+            position: absolute;
+        }
+        .linkpg{
+            transform: translate(-50%,120%);
+            position: absolute;
+            width: 60px;
+            height: 35px;
+            top: 85%;
+            left:50% ;
+            font-size: small;
+            
+        }   
+    }*/
