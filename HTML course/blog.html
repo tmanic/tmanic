@@ -4,110 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Blogs</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="preloader.css">
     <style>
-        *{
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            font-family: serif;
-        }
-        body{
-            align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-        .container{
-            height: 100vh;
-            width: 100%;
-            position: relative;
-            background-color: peru;
-        }
-        /*.logo{
-            height: 100px;
-            width: 100px;
-            background-color: red;
-            position: absolute;
-            left: 5px;
-            top: 10px;
 
-        }*/
-        h1{
-            left: 45%;
-            position: absolute;
-            top: 5%;
-            
-        }
-        ul{
-            position: absolute;
-            left: 25%;
-            top: 15%;
-            height: 70%;
-            width: 50%;
-            background-color: powderblue;
-            justify-content: center;
-            list-style: none;
-        }
-        li{
-            left: 35%;
-            position: absolute;
-        }
-        li:nth-child(1){
-            top: 50px;
-            
-        }
-        li:nth-child(2){
-            top: 120px;
-            
-        }
-        li:nth-child(3){
-            top: 190px;
-        }
-        li:nth-child(4){
-            top: 260px;
-        }
-        li:nth-child(5){
-            top: 330px;
-        }
-        a{
-            height: 50px;
-            width: 250px;
-            border: 2px solid black;
-            list-style: none;
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-size: larger;
-            transition: 1s;
-        }
-        a:link{
-            text-decoration: none;
-            color: black;
-        }
-        a:visited{
-            text-decoration: none;
-            color: black;
-        }
-        a:hover{
-            top: -5px;
-            border-radius: 10px;
-            box-shadow: 0.25vmin 0.25vmin 1px 1px green,
-                        -0.25vmin -0.25vmin 1px 1px green;
-        }
- 
-        footer{
-            position: absolute;
-            top: 95%;
-        }
     </style>
 </head>
 <body>
+    <div id="preloader"></div>
     <div class="container">
         <div id="logo" class="logo"></div>
+        <div class="menu">
+        </div>
+        
             <h1>Bold Blogger</h1>
-            <ul>
+            <ul class="navbar">
                 <li><a href="idea of love.html">Idea of love</a></li>
                 <li><a href="#">Turning expectations to appreciations</a></li>
                 <li><a href="#">Anime</a></li>
@@ -117,6 +29,41 @@
         <footer>Blogging and work from home tips every week</footer>
     
     </div>
+    <div class="toggle">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Case Studies</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="#" id="Socials">Socials</a></li>
+        </ul>
+    </div>
+    <div class="links">
+        <ul class="ul_links">
+            <li><a href="#"><img src="tiktok icon.png" alt="tiktok"></a></li>
+            <li><a href="#"><img src="twitter icon.png" alt="tiktok"></a></li>
+            <li><a href="#"><img src="instragram icon.png" alt="tiktok"></a></li>
+            <li><a href="#"><img src="facebook icon.png" alt="tiktok"></a></li>
+        </ul>
+    </div>
+<script src="preloader.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu')
+        const container = document.querySelector('.container')
+        const Toggle = document.querySelector('.toggle')
     
+    menuToggle.addEventListener('click',() => {
+        menuToggle.classList.toggle('active')
+        container.classList.toggle('active')
+        Toggle.classList.toggle('active')
+    })
+    const socials = document.getElementById('Socials')
+    const links = document.querySelector('.links')
+    socials.addEventListener('click', () => {
+        links.classList.toggle('active')
+    })
+    
+    </script>
 </body>
 </html>
