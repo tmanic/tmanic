@@ -483,26 +483,43 @@
                 position: relative;
                 width: 85%;
                 height: 15%;
-                left: 70%;
-                font-size: medium;
+                left: 25%;
+                font-size: small;
             }
-    
-    .avatar{
-        top: 35%;
-        left: 500px;
-        transform: translate(-50%, -50%);
-       
-        scale: 1.5;
+    .ul-bar{
+        
+        right: 5%;
         
     }
-    
-    .content{
-        top: 70%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-        transform: scaleX(1.8) scaleY(1.5);
-        line-height: 30px;
+    .ul-bar li{
         
+        margin-left: 20px;
+        
+    }
+    .avatar{
+        top: 35%;
+        left: 120px;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        scale: 1;
+        
+    }
+.hair::after{
+    left: 23.5vw;
+}
+    .content{
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .glitch{
+        letter-spacing: 10px;
+    }
+    .content > p{
+        font-size: larger;
+     }
+    .arrow{
+        bottom: 20%;
     }
     
         }
