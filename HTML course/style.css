@@ -330,7 +330,7 @@
             width: 5px;
             background-color: rgb(22, 18, 18);
             top: 17px;
-            left: 6.9vw;
+            right: 0;
         }
         #bb{
             height: 20px;
@@ -439,7 +439,7 @@
                 position: relative;
                 width: 85%;
                 height: 15%;
-                left: 20%;
+                left: 17%;
                 font-size: small;
             }
     .ul-bar{
@@ -461,7 +461,7 @@
         
     }
 .hair::after{
-    left: 19vw;
+    right: 0;
 }
     .content{
         top: 62%;
@@ -483,17 +483,17 @@
                 position: relative;
                 width: 85%;
                 height: 15%;
-                left: 25%;
-                font-size: small;
+                left: 20%;
+                font-size: medium;
             }
     .ul-bar{
         
-        right: 5%;
+        right: 10%;
         
     }
     .ul-bar li{
         
-        margin-left: 20px;
+        margin-left: 10px;
         
     }
     .avatar{
@@ -505,7 +505,7 @@
         
     }
 .hair::after{
-    left: 23.5vw;
+    right: 0;
 }
     .content{
         top: 65%;
@@ -520,6 +520,51 @@
      }
     .arrow{
         bottom: 20%;
+    }
+    
+        }
+        @media all and (max-width:300px){
+            .nav-bar{
+                position: relative;
+                width: 85%;
+                height: 15%;
+                left: 12%;
+                font-size: medium;
+            }
+    .ul-bar{
+        
+        right: 5%;
+        
+    }
+    .ul-bar li{
+        
+        margin-left: 10px;
+        
+    }
+    .avatar{
+        top: 32%;
+        left: 50px;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        scale: 0.8;
+        
+    }
+.hair::after{
+    right: 0;
+}
+    .content{
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .glitch{
+        letter-spacing: 10px;
+    }
+    .content > p{
+        font-size: larger;
+     }
+    .arrow{
+        bottom: 15%;
     }
     
         }

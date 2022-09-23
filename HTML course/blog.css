@@ -151,9 +151,9 @@ left: -250px;
 top: 60%;
 height: 200px;
 width: 150px;
-/*border: 2px solid red;*/
+border: 1px solid red;
 border-radius: 10px;
-background-color: transparent;
+background-color: black;
 display: none;
 align-items: center;
 justify-content: center;
@@ -173,14 +173,16 @@ grid-gap: .5em;
 grid-template-areas: 
 "photoOne photoTwo"
 "photoThree photoFour" ;
-grid-template-columns: 1fr 30% 40%
-;
-
-
 }
 .ul_links img{
-height: 40px;
-width: 40px;
+aspect-ratio: 1/1;
+width: 100%;
+object-fit: cover;
+transition: scale 350ms ease, opacity 350ms linear;
+}
+.ul_links:has(img:hover) img:not(:hover){
+    scale: .8;
+    opacity: .7;
 }
 .ul_links a{
 text-decoration: none;
@@ -208,5 +210,23 @@ color: black;
     }
     footer{
         font-size: small;
+    }
+}
+@media all and (max-width:300px){
+    .navbar{
+       
+        left: -8%;     
+    }
+    h1{
+        left: 20%; 
+    }
+    footer{
+        font-size: small;
+    }
+    .container.active{
+        left: 220px;
+    }
+    .toggle.active{
+        left: -40px;
     }
 }
