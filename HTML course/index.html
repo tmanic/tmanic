@@ -1,58 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tevin's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-    
-    </style>
-</headevin
+	<title>Tevin Charles Akoth - Data Analyst</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/2937a10e54.js" crossorigin="anonymous"></script>
+</head>
 <body>
-    <div id="preloader"></div>
-    <section class="container">
-        <nav class="nav-bar">
-            
-            <ul class="ul-bar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="home.html">Case Studies</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-        <div class="avatar">
-            <div class="head">
-                <div class="eyebrow eyr1"></div>
-                <div class="eyebrow eyr2"></div>
-                <div class="mouth"></div>
-                <div class="mole"></div>
-                <div class="nose"></div>
-                <div class="ear onoy"></div>
-                <div class="ear twoy"></div>
-                <div class="glass gl1">
-                    <div class="eye"></div>
-                </div>
-                <div class="glass gl2">
-                    <div class="eye"></div>
-                </div>
-                <div class="mustache"></div>
-                <div class="hair"></div>
-            </div>
-            <div class="neck"></div>
-            <div class="shirt"></div>
-        </div>
-        <div class="content">
-            <p><span  class="glitch">Hi</span>, my name is <br><b>Tevin</b></p>
-            
-        </div>
-        <div class="arrow"><span class="V">V</span></div>
-    </section>
-    <script src="abtrolleyes.js"></script>
-<script src="preloader.js"></script>
-<script src="eyebrow.js"></script>
-
+	<header>
+		<div class="logo">
+			<a href="#home">
+				Tevin <br> Charles <br> Akoth
+		  </a></div>
+		<nav>
+			<ul>
+				<li><a href="#services">SERVICES</a></li>
+				<li><a href="#about">ABOUT ME</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="home">
+		<div class="intro">
+			<h1>Tevin Charles Akoth</h1>
+			<h2>Data Analyst</h2>
+			<p>"I want to help others make the right data-driven decisions."</p>
+		</div>
+	</section>
+	<section id="services">
+		<h2>Services</h2>
+		<p>Here are some of the services I offer:</p>
+		<ul>
+			<li>Data analysis and visualization</li>
+			<li>Data cleaning and processing</li>
+			<li>Data mining and modeling</li>
+			<li>Statistical analysis</li>
+			<li>Reporting and presentation</li>
+		</ul>
+	</section>
+	<section id="about">
+		<h2>About Me</h2>
+		<p>Here's some information about me:</p>
+		<ul>
+			<li>Education: Bachelor's degree in Epidmiology and Biostatistics</li>
+			<li>Experience: 2 years of experience in data analysis</li>
+			<li>Skills: Data analysis, data visualization, statistical analysis, programming (Python, R), data cleaning and processing</li>
+		</ul>
+	</section>
+	<section id="portfolio">
+		<h2>Portfolio</h2>
+		<p>Here are some examples of my work:</p>
+		<div class="project">
+			<img src="project1.png" alt="Project 1">
+			<h3>Project 1</h3>
+			<p>Description of project 1</p>
+		</div>
+		<div class="project">
+			<img src="project2.png" alt="Project 2">
+			<h3>Project 2</h3>
+			<p>Description of project 2</p>
+		</div>
+	</section>
+	<section id="contact">
+		<h2>Contact</h2>
+		<form action="submit-form.php" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			<input type="submit" value="Send">
+		</form>
+	</section>
+	<a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+<script src="main.js"></script>
 </body>
 </html>
