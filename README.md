@@ -8,6 +8,7 @@
 - 📝 I regularly write articles on [https://tevinakoth.substack.com/p/playlistish](https://tevinakoth.substack.com/p/playlistish)
 
 - ⚡ Fun fact **I love cats**
+- Hey! Don't forget to check my portfolio: https://tmanic.github.io/Tevin-s-portfolio.github.io/
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
